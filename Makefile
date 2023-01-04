@@ -4,7 +4,7 @@ MAIN = cv
 all: $(MAIN).pdf
 
 
-$(MAIN).pdf: $(MAIN).tex cv.bib $(AUTOGEN)
+$(MAIN).pdf: $(MAIN).tex cv.bib
 	@latexmk -pdf $(@:.pdf=.tex)
 
 
