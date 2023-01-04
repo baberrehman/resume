@@ -31,6 +31,7 @@
 %other packages for formatting
 \RequirePackage{color}
 \RequirePackage{graphicx}
+\graphicspath{ {./images/} }
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[scale=0.9]{geometry}
 
@@ -80,7 +81,7 @@
 \usepackage{fontawesome5}
 
 \usepackage[T1]{fontenc}
-\usepackage{lmodern}
+\usepackage{palatino}
 
 %debug page outer frames
 %\usepackage{showframe}
@@ -104,14 +105,32 @@
 % \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
 % \end{tabularx}
 
-\begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Baber Rehman} \\[7.5pt]
-\href{https://github.com/baberrehman}{\raisebox{-0.05\height}\faGithub\ baberrehman} \ $|$ \
-\href{https://www.linkedin.com/in/baberrehman/}{\raisebox{-0.05\height}\faLinkedin\ baberrehman} \ $|$ \
-\href{https://baberrehman.github.io/}{\raisebox{-0.05\height}\faGlobe \ myweb} \ $|$ \
-\href{mailto:baberrehman26@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ baberrehman26@gmail.com} \ $|$ \
-\href{tel:+85267340119}{\raisebox{-0.05\height}\faMobile \ +852 6734 0119} \\
-\end{tabularx}
+% \begin{tabularx}{\linewidth}{@{}l X@{} @{}r @{}r}
+\begin{center}
+{\Huge{Baber Rehman}}
+
+\begin{tabular}{|l|l|}
+    \href{https://github.com/baberrehman}{\raisebox{-0.05\height}\faGithub\ baberrehman} &
+    \href{tel:+85267340119}{\raisebox{-0.05\height}\faMobile \ +852 6734 0119} \\
+    \href{https://www.linkedin.com/in/baberrehman/}{\raisebox{-0.05\height}\faLinkedin\ baberrehman} &
+    \href{mailto:baberrehman26@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ baberrehman26@gmail.com} \\
+    \href{https://baberrehman.github.io/}{\raisebox{-0.05\height}\faGlobe \ baberrehman.github.io} & \\
+\end{tabular}
+\begin{tabular}{l}
+        \includegraphics[scale=0.04]{baber}
+\end{tabular}
+\end{center}
+
+
+
+  % \begin{tabularx}{\linewidth}{@{} l @{} l}
+  % \Huge{Baber Rehman} \\[7.5pt]
+  % \href{https://github.com/baberrehman}{\raisebox{-0.05\height}\faGithub\ baberrehman} &
+  % \href{https://www.linkedin.com/in/baberrehman/}{\raisebox{-0.05\height}\faLinkedin\ baberrehman} \\
+  % \href{tel:+85267340119}{\raisebox{-0.05\height}\faMobile \ +852 6734 0119} &
+  % \href{https://baberrehman.github.io/}{\raisebox{-0.05\height}\faGlobe \ myweb} \\
+  % \href{mailto:baberrehman26@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ baberrehman26@gmail.com} \\
+  % \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 % SUMMARY
@@ -180,7 +199,7 @@
 \nobibliography{cv}
 \bibliographystyle{unsrt}
 %\nocite{*}
-\input{sections/publications}
+%\input{sections/publications}
 
 
 
